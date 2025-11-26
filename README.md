@@ -67,8 +67,8 @@ If you use this code in your research, please cite:
 ```bibtex
 @article{doe2025compressed,
   title={Comparative Analysis of First-Order Methods for Sparse Signal Recovery in Compressed Sensing},
-  author={Doe, John},
-  journal={COMP6704 Project Report},
+  author={Hiu Long Lee},
+  journal={COMP6704 Individual Project Report},
   year={2025}
 }
 ```
