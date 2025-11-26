@@ -1,7 +1,4 @@
-# COMP6704-Individual-Project
-Topic: Comparative Analysis of First-Order Methods for Sparse Signal Recovery in Compressed Sensing
-
-# Compressed Sensing Optimization Methods
+# Comparative Analysis of First-Order Methods for Sparse Signal Recovery in Compressed Sensing
 
 This repository contains the implementation and experimental evaluation of first-order optimization methods for compressed sensing, as presented in the paper "Comparative Analysis of First-Order Methods for Sparse Signal Recovery in Compressed Sensing".
 
