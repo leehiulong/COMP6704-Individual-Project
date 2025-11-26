@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## 🏃‍♂️ Usage
 Run the main experiments:
 ```python
-python experiments_v12.py
+python experiments.py
 ```
 The script will:
 - Generate synthetic compressed sensing problems
