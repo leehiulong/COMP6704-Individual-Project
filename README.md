@@ -49,7 +49,7 @@ Key metrics evaluated:
 ```text
 COMP6704-Individual-Project/
 ├── experiment.py           # Experimental codes in Python
-├── report.tex              # LaTeX report
+├── report.pdf              # Report PDF
 ├── requirements.txt        # Python dependencies
 ├── README.md               # This file
 └── results/                # Generated results and plots
