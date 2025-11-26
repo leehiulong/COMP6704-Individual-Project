@@ -65,7 +65,7 @@ compressed-sensing-optimization/
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{doe2025compressed,
+@article{lee2025compressed,
   title={Comparative Analysis of First-Order Methods for Sparse Signal Recovery in Compressed Sensing},
   author={Hiu Long Lee},
   journal={COMP6704 Individual Project Report},
