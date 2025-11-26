@@ -48,7 +48,7 @@ Key metrics evaluated:
 ## 📁 Project Structure
 ```text
 COMP6704-Individual-Project/
-├── experiment.py           # Experimental codes in Python
+├── experiments.py           # Experimental codes in Python
 ├── report.pdf              # Report PDF
 ├── requirements.txt        # Python dependencies
 ├── README.md               # This file
