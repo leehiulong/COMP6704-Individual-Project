@@ -47,12 +47,12 @@ Key metrics evaluated:
 
 ## 📁 Project Structure
 ```text
-compressed-sensing-optimization/
-├── experiments_v12.py      # Main experimental framework
-├── cs_v12.tex             # LaTeX report
+COMP6704-Individual-Project/
+├── experiment.py           # Experimental codes in Python
+├── report.tex              # LaTeX report
 ├── requirements.txt        # Python dependencies
-├── README.md              # This file
-└── results/               # Generated results and plots
+├── README.md               # This file
+└── results/                # Generated results and plots
 ```
 
 ## 📈 Key Findings
