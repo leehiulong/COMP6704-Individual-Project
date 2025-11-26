@@ -39,6 +39,7 @@ The experiments evaluate algorithms across 8 scenarios with varying:
 - Compression ratios (m/n = 0.25, 0.7)
 - Sparsity levels (k/n = 0.05, 0.1)
 - Noise conditions (σ = 0.01, 0.1)
+
 Key metrics evaluated:
 - Reconstruction accuracy
 - Computational efficiency
