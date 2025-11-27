@@ -1,0 +1,245 @@
+====================================================================================================
+COMPREHENSIVE COMPRESSED SENSING OPTIMIZATION RESULTS
+====================================================================================================
+Number of scenarios: 8
+Methods compared: ISTA, FISTA, ADMM_Woodbury, ADMM_CG
+
+====================================================================================================
+DETAILED RESULTS BY SCENARIO
+====================================================================================================
+
+SCENARIO: LOW_COMPRESSION_HIGH_SPARSITY_LOW_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.458105     0.032876     66.3784      2.4855       80.00%       6503.9      
+FISTA    0.454740     0.033418     4.9699       0.5334       100.00%      486.2       
+ADMM_Woodbury 0.454661     0.033475     99.2658      47.1575      100.00%      536.1       
+ADMM_CG  0.454661     0.033475     47.8837      14.5983      100.00%      535.7       
+
+SCENARIO: LOW_COMPRESSION_HIGH_SPARSITY_HIGH_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.578550     0.025678     5.1385       0.2042       0.00%        507.6       
+FISTA    0.578135     0.025771     1.5640       0.2113       0.00%        154.3       
+ADMM_Woodbury 0.578140     0.025665     22.9314      2.2203       0.00%        113.4       
+ADMM_CG  0.578140     0.025665     9.6148       0.5175       0.00%        113.3       
+
+SCENARIO: LOW_COMPRESSION_LOW_SPARSITY_LOW_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.052739     0.002285     18.3969      1.1664       100.00%      1786.8      
+FISTA    0.051987     0.002373     3.2158       0.4386       100.00%      308.6       
+ADMM_Woodbury 0.052355     0.002252     26.4840      3.3038       100.00%      132.2       
+ADMM_CG  0.052355     0.002252     13.3502      0.5533       100.00%      131.1       
+
+SCENARIO: LOW_COMPRESSION_LOW_SPARSITY_HIGH_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.350737     0.013641     3.8341       0.1599       100.00%      382.9       
+FISTA    0.350676     0.013811     1.2500       0.1718       100.00%      123.5       
+ADMM_Woodbury 0.350380     0.013631     22.0849      3.5830       100.00%      116.5       
+ADMM_CG  0.350380     0.013631     9.8417       1.4649       100.00%      117.7       
+
+SCENARIO: HIGH_COMPRESSION_HIGH_SPARSITY_LOW_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.028481     0.000934     10.0934      0.2303       100.00%      275.9       
+FISTA    0.028556     0.001097     4.0559       0.6716       100.00%      110.7       
+ADMM_Woodbury 0.028431     0.000934     326.2865     6.6429       100.00%      102.2       
+ADMM_CG  0.028431     0.000934     74.1606      0.4496       100.00%      99.8        
+
+SCENARIO: HIGH_COMPRESSION_HIGH_SPARSITY_HIGH_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.246514     0.008252     4.3927       0.1333       100.00%      119.4       
+FISTA    0.246286     0.008448     2.5383       0.3952       100.00%      69.6        
+ADMM_Woodbury 0.246406     0.008252     233.4357     13.2926      100.00%      73.0        
+ADMM_CG  0.246406     0.008252     30.4696      1.8726       100.00%      72.8        
+
+SCENARIO: HIGH_COMPRESSION_LOW_SPARSITY_LOW_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.024434     0.000958     8.8924       0.2956       100.00%      238.1       
+FISTA    0.024420     0.000968     4.4381       0.4370       100.00%      118.6       
+ADMM_Woodbury 0.024410     0.000957     363.1517     30.6859      100.00%      107.9       
+ADMM_CG  0.024410     0.000957     83.3711      2.7170       100.00%      106.2       
+
+SCENARIO: HIGH_COMPRESSION_LOW_SPARSITY_HIGH_NOISE
+----------------------------------------------------------------------------------------------------
+Method   Avg Error    Std Error    Avg Time(s)  Std Time     Success Rate Avg Iters   
+----------------------------------------------------------------------------------------------------
+ISTA     0.227291     0.009373     4.4997       0.0969       100.00%      123.3       
+FISTA    0.227194     0.009380     2.8476       0.1918       100.00%      78.0        
+ADMM_Woodbury 0.227223     0.009370     239.2627     6.0605       100.00%      78.7        
+ADMM_CG  0.227223     0.009370     35.0049      0.6893       100.00%      79.4        
+
+====================================================================================================
+OVERALL PERFORMANCE RANKING BY SCENARIO
+====================================================================================================
+
+low_compression_high_sparsity_low_noise:
+  1. ADMM_CG: Error=0.454661, Time=47.8837s, Success=100.00%
+  2. ADMM_Woodbury: Error=0.454661, Time=99.2658s, Success=100.00%
+  3. FISTA: Error=0.454740, Time=4.9699s, Success=100.00%
+  4. ISTA: Error=0.458105, Time=66.3784s, Success=80.00%
+
+low_compression_high_sparsity_high_noise:
+  1. FISTA: Error=0.578135, Time=1.5640s, Success=0.00%
+  2. ADMM_Woodbury: Error=0.578140, Time=22.9314s, Success=0.00%
+  3. ADMM_CG: Error=0.578140, Time=9.6148s, Success=0.00%
+  4. ISTA: Error=0.578550, Time=5.1385s, Success=0.00%
+
+low_compression_low_sparsity_low_noise:
+  1. FISTA: Error=0.051987, Time=3.2158s, Success=100.00%
+  2. ADMM_CG: Error=0.052355, Time=13.3502s, Success=100.00%
+  3. ADMM_Woodbury: Error=0.052355, Time=26.4840s, Success=100.00%
+  4. ISTA: Error=0.052739, Time=18.3969s, Success=100.00%
+
+low_compression_low_sparsity_high_noise:
+  1. ADMM_CG: Error=0.350380, Time=9.8417s, Success=100.00%
+  2. ADMM_Woodbury: Error=0.350380, Time=22.0849s, Success=100.00%
+  3. FISTA: Error=0.350676, Time=1.2500s, Success=100.00%
+  4. ISTA: Error=0.350737, Time=3.8341s, Success=100.00%
+
+high_compression_high_sparsity_low_noise:
+  1. ADMM_CG: Error=0.028431, Time=74.1606s, Success=100.00%
+  2. ADMM_Woodbury: Error=0.028431, Time=326.2865s, Success=100.00%
+  3. ISTA: Error=0.028481, Time=10.0934s, Success=100.00%
+  4. FISTA: Error=0.028556, Time=4.0559s, Success=100.00%
+
+high_compression_high_sparsity_high_noise:
+  1. FISTA: Error=0.246286, Time=2.5383s, Success=100.00%
+  2. ADMM_Woodbury: Error=0.246406, Time=233.4357s, Success=100.00%
+  3. ADMM_CG: Error=0.246406, Time=30.4696s, Success=100.00%
+  4. ISTA: Error=0.246514, Time=4.3927s, Success=100.00%
+
+high_compression_low_sparsity_low_noise:
+  1. ADMM_Woodbury: Error=0.024410, Time=363.1517s, Success=100.00%
+  2. ADMM_CG: Error=0.024410, Time=83.3711s, Success=100.00%
+  3. FISTA: Error=0.024420, Time=4.4381s, Success=100.00%
+  4. ISTA: Error=0.024434, Time=8.8924s, Success=100.00%
+
+high_compression_low_sparsity_high_noise:
+  1. FISTA: Error=0.227194, Time=2.8476s, Success=100.00%
+  2. ADMM_CG: Error=0.227223, Time=35.0049s, Success=100.00%
+  3. ADMM_Woodbury: Error=0.227223, Time=239.2627s, Success=100.00%
+  4. ISTA: Error=0.227291, Time=4.4997s, Success=100.00%
+
+====================================================================================================
+STABILITY ANALYSIS RESULTS
+====================================================================================================
+
+Scenario                                 Method   Error CV   Time CV    High Rel   Med Rel    Low Rel   
+----------------------------------------------------------------------------------------------------
+low_compression_high_sparsity_low_noise  ISTA     0.0718     0.0374     0.00%      80.00%     100.00%   
+low_compression_high_sparsity_low_noise  FISTA    0.0735     0.1073     0.00%      100.00%    100.00%   
+low_compression_high_sparsity_low_noise  ADMM_Woodbury 0.0736     0.4751     0.00%      100.00%    100.00%   
+low_compression_high_sparsity_low_noise  ADMM_CG  0.0736     0.3049     0.00%      100.00%    100.00%   
+low_compression_high_sparsity_high_noise ISTA     0.0444     0.0397     0.00%      0.00%      100.00%   
+low_compression_high_sparsity_high_noise FISTA    0.0446     0.1351     0.00%      0.00%      100.00%   
+low_compression_high_sparsity_high_noise ADMM_Woodbury 0.0444     0.0968     0.00%      0.00%      100.00%   
+low_compression_high_sparsity_high_noise ADMM_CG  0.0444     0.0538     0.00%      0.00%      100.00%   
+low_compression_low_sparsity_low_noise   ISTA     0.0433     0.0634     100.00%    100.00%    100.00%   
+low_compression_low_sparsity_low_noise   FISTA    0.0456     0.1364     100.00%    100.00%    100.00%   
+low_compression_low_sparsity_low_noise   ADMM_Woodbury 0.0430     0.1247     100.00%    100.00%    100.00%   
+low_compression_low_sparsity_low_noise   ADMM_CG  0.0430     0.0414     100.00%    100.00%    100.00%   
+low_compression_low_sparsity_high_noise  ISTA     0.0389     0.0417     0.00%      100.00%    100.00%   
+low_compression_low_sparsity_high_noise  FISTA    0.0394     0.1374     0.00%      100.00%    100.00%   
+low_compression_low_sparsity_high_noise  ADMM_Woodbury 0.0389     0.1622     0.00%      100.00%    100.00%   
+low_compression_low_sparsity_high_noise  ADMM_CG  0.0389     0.1488     0.00%      100.00%    100.00%   
+high_compression_high_sparsity_low_noise ISTA     0.0328     0.0228     100.00%    100.00%    100.00%   
+high_compression_high_sparsity_low_noise FISTA    0.0384     0.1656     100.00%    100.00%    100.00%   
+high_compression_high_sparsity_low_noise ADMM_Woodbury 0.0328     0.0204     100.00%    100.00%    100.00%   
+high_compression_high_sparsity_low_noise ADMM_CG  0.0328     0.0061     100.00%    100.00%    100.00%   
+high_compression_high_sparsity_high_noise ISTA     0.0335     0.0304     0.00%      100.00%    100.00%   
+high_compression_high_sparsity_high_noise FISTA    0.0343     0.1557     0.00%      100.00%    100.00%   
+high_compression_high_sparsity_high_noise ADMM_Woodbury 0.0335     0.0569     0.00%      100.00%    100.00%   
+high_compression_high_sparsity_high_noise ADMM_CG  0.0335     0.0615     0.00%      100.00%    100.00%   
+high_compression_low_sparsity_low_noise  ISTA     0.0392     0.0332     100.00%    100.00%    100.00%   
+high_compression_low_sparsity_low_noise  FISTA    0.0396     0.0985     100.00%    100.00%    100.00%   
+high_compression_low_sparsity_low_noise  ADMM_Woodbury 0.0392     0.0845     100.00%    100.00%    100.00%   
+high_compression_low_sparsity_low_noise  ADMM_CG  0.0392     0.0326     100.00%    100.00%    100.00%   
+high_compression_low_sparsity_high_noise ISTA     0.0412     0.0215     0.00%      100.00%    100.00%   
+high_compression_low_sparsity_high_noise FISTA    0.0413     0.0674     0.00%      100.00%    100.00%   
+high_compression_low_sparsity_high_noise ADMM_Woodbury 0.0412     0.0253     0.00%      100.00%    100.00%   
+high_compression_low_sparsity_high_noise ADMM_CG  0.0412     0.0197     0.00%      100.00%    100.00%   
+
+====================================================================================================
+OVERALL STABILITY SUMMARY
+====================================================================================================
+
+Rank   Method   Overall Stability  Error CV     Time CV      Reliability 
+--------------------------------------------------------------------------------
+1      ISTA     0.9280             0.0431       0.0363       85.00%      
+2      ADMM_CG  0.9227             0.0433       0.0836       87.50%      
+3      FISTA    0.9120             0.0446       0.1254       87.50%      
+4      ADMM_Woodbury 0.9112             0.0433       0.1308       87.50%      
+
+====================================================================================================
+RECOMMENDATIONS
+====================================================================================================
+
+ACCURACY RANKING (Lower error better):
+  1. FISTA: Average Error = 0.245249
+  2. ADMM_CG: Average Error = 0.245251
+  3. ADMM_Woodbury: Average Error = 0.245251
+  4. ISTA: Average Error = 0.245856
+
+SPEED RANKING (Lower time better):
+  1. FISTA: Average Time = 3.1099s
+  2. ISTA: Average Time = 15.2033s
+  3. ADMM_CG: Average Time = 37.9621s
+  4. ADMM_Woodbury: Average Time = 166.6128s
+
+RELIABILITY RANKING (Higher success rate better):
+  1. FISTA: Success Rate = 87.50%
+  2. ADMM_Woodbury: Success Rate = 87.50%
+  3. ADMM_CG: Success Rate = 87.50%
+  4. ISTA: Success Rate = 85.00%
+
+OVERALL RECOMMENDATION:
+  Based on balanced performance across accuracy, speed, and stability:
+  -> RECOMMENDED: ISTA
+
+====================================================================================================
+ALGORITHM PERFORMANCE SUMMARY
+====================================================================================================
+
+ISTA PERFORMANCE SUMMARY:
+--------------------------------------------------
+  Average Error: 0.245856 ± 0.193860
+  Average Time: 15.2033s ± 19.8653s
+  Average Success Rate: 85.00%
+  Best Scenario: high_compression_low_sparsity_low_noise
+  Worst Scenario: low_compression_high_sparsity_high_noise
+
+FISTA PERFORMANCE SUMMARY:
+--------------------------------------------------
+  Average Error: 0.245249 ± 0.193395
+  Average Time: 3.1099s ± 1.2437s
+  Average Success Rate: 87.50%
+  Best Scenario: high_compression_low_sparsity_low_noise
+  Worst Scenario: low_compression_high_sparsity_high_noise
+
+ADMM_Woodbury PERFORMANCE SUMMARY:
+--------------------------------------------------
+  Average Error: 0.245251 ± 0.193338
+  Average Time: 166.6128s ± 132.0847s
+  Average Success Rate: 87.50%
+  Best Scenario: high_compression_low_sparsity_low_noise
+  Worst Scenario: low_compression_high_sparsity_high_noise
+
+ADMM_CG PERFORMANCE SUMMARY:
+--------------------------------------------------
+  Average Error: 0.245251 ± 0.193338
+  Average Time: 37.9621s ± 26.7762s
+  Average Success Rate: 87.50%
+  Best Scenario: high_compression_low_sparsity_low_noise
+  Worst Scenario: low_compression_high_sparsity_high_noise
